@@ -3,9 +3,9 @@ package openwise.mhonis;
 public enum Command {
 	HELP("Lists all available commands"),
 	LIST("Prints the currency list"),
+	LOAD("Loads currencies from a text file. Must be followed by a filename or full path."),
 	QUIT("Terminates the application");
 
-	//LOAD("Loads file from a specified path; command must be followed by a file path)
 
 	private String description;
 

@@ -15,7 +15,7 @@ public class PaymentTrackerMain {
 
 	private static void init() {
 		CurrencyListingScheduler.getInstance().init();
-		InputProcessor.getInstance().init();
+		ConsoleInputProcessor.getInstance().init();
 	}
 
 	private static void shutdown() {

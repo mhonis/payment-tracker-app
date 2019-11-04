@@ -15,6 +15,10 @@ public class CurrencyListingScheduler {
 	private CurrencyListingScheduler() {
 	}
 
+	/**
+	 * Returns the singleton instance or creates one if there is none.
+	 * @return
+	 */
 	public static CurrencyListingScheduler getInstance() {
 		if (instance == null)
 			instance = new CurrencyListingScheduler();
@@ -37,10 +41,10 @@ public class CurrencyListingScheduler {
 
 	/**
 	 * Runnable that prints the current list of currencies in memory
-	 */
+0	 */
 	private static Runnable runnable = new Runnable() {
 		public void run() {
-			InputProcessor.getInstance().listCurrencies();
+			ConsoleInputProcessor.getInstance().listCurrencies();
 		}
 	};
 }
